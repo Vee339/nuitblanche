@@ -23,7 +23,7 @@ body {
   color: var(--secondary-color);
 }
 header {
-  padding: 3.5rem 0 1rem;
+  padding: 1rem 0;
 }
 #news-and-updates {
   background: var(--accent-color);
