@@ -60,6 +60,16 @@ nav ul li a.active {
 }
 header {
   padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: var(--secondary-color);
+  background: linear-gradient(
+    180deg,
+    var(--secondary-color) 0%,
+    var(--primary-color) 450%
+  );
 }
 #news-and-updates {
   background: var(--accent-color);
@@ -147,7 +157,7 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 1rem;
+  padding: 262px 1rem 130px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -164,12 +174,105 @@ main h2 {
 .events {
   display: flex;
   gap: 1rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+.events::-webkit-scrollbar {
+  display: none;
+}
+.events .event {
+  flex-shrink: 0;
 }
 .events .event {
   width: 268px;
   height: 258px;
-  border: 1px solid white;
+  border-radius: 25px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
 }
+.events .event .buttons {
+  align-self: flex-end;
+  display: flex;
+  gap: 1rem;
+}
+.events .event .buttons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background: var(--brownish-color);
+}
+.events .bottom {
+  color: var(--tertiary-color);
+}
+.event h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  margin-bottom: 0.5rem;
+}
+.event .bottom p {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+.event .view {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 100%;
+  outline: 15px solid #341d4b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem;
+  background: var(--accent-color);
+}
+.events .event.illuminart {
+  background: url("../assets/images/illuminart.png");
+}
+.events .event.screen {
+  background: url("../assets/images/screen.png");
+}
+.events .event.ice {
+  background: url("../assets/images/ice.png");
+}
+.events .event.cloud {
+  background: url("../assets/images/cloud.png");
+}
+.events .event.drop {
+  background: url("../assets/images/drop.png");
+}
+.events .event.bubble {
+  background: url("../assets/images/bubble.png");
+}
+.events .event.moon {
+  background: url("../assets/images/moon.png");
+}
+.events .event.bulbs {
+  background: url("../assets/images/bulbs.png");
+}
+.events .event.flower {
+  background: url("../assets/images/flower.png");
+}
+.events .event.bicycles {
+  background: url("../assets/images/bicycle.png");
+}
+.events .event.man {
+  background: url("../assets/images/man.png");
+}
+.events .event.garden-light {
+  background: url("../assets/images/garden_light.png");
+}
+.events .event.loot {
+  background: url("../assets/images/loot.png");
+}
+
 @keyframes scroll-left {
   0% {
     transform: translateX(0);
