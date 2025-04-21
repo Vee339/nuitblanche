@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nuit Blanche - Quiz</title>
+    <link rel="stylesheet" href="./styles/quiz.css" />
+  </head>
+  <body>
+    <main id="quiz">
+      <header>
+        <span class="step">1/5</span>
+        <div class="progress-track">
+          <div class="progress-bar"></div>
+        </div>
+        <a class="closeBtn" href="index.html">
+          <img src="./assets/icons/close.svg" alt="" />
+        </a>
+      </header>
+
+      <h1>What are you most interested in?</h1>
+      <div class="imgBox">
+        <img src="./assets/images/painting.png" alt="" />
+      </div>
+      <form>
+        <div class="options">
+          <div class="inputBox">
+            <input type="checkbox" name="question1" id="installations" />
+            <label for="installations">Installations</label>
+          </div>
+          <div class="inputBox">
+            <input type="checkbox" name="question1" id="painting" />
+            <label for="painting">Painting</label>
+          </div>
+          <div class="inputBox">
+            <input type="checkbox" name="question1" id="photography" />
+            <label for="photography">photography</label>
+          </div>
+          <div class="inputBox">
+            <input type="checkbox" name="question1" id="performances" />
+            <label for="performances">performances</label>
+          </div>
+        </div>
+      </form>
+      <div class="buttons">
+        <a class="back" href="index.html"
+          ><img src="./assets/icons/left.svg" />Back</a
+        >
+        <a class="next" href="quiz2.html">Next Question</a>
+      </div>
+    </main>
+  </body>
+</html>

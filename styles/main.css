@@ -154,7 +154,7 @@ h1 {
 }
 
 /* Styling of the events */
-main {
+main#home {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -281,4 +281,14 @@ main h2 {
   100% {
     transform: translateX(-100%);
   }
+}
+
+/* Styling of the quiz page */
+main#quiz {
+  padding: 1rem;
+  width: calc(100vw - 2rem);
+  height: calc(100vh - 2rem);
+  margin: auto;
+  background: var(--tertiary-color);
+  border-radius: 20px;
 }
