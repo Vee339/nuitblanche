@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+:root {
+  --primary-color: #593180;
+  --secondary-color: #120a1a;
+  --accent-color: #38cc96;
+  --tertiary-color: #ffffff;
+}
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--secondary-color);
+  background: linear-gradient(
+    180deg,
+    var(--secondary-color) 0%,
+    var(--primary-color) 100%
+  );
+  color: var(--secondary-color);
+}
+header {
+  padding: 3.5rem 0 1rem;
+}
+#news-and-updates {
+  background: var(--accent-color);
+  font-size: 1.125rem;
+  margin-bottom: 11px;
+  overflow: hidden;
+}
+#news-and-updates p {
+  animation: scroll-left 20s linear infinite;
+  text-wrap: nowrap;
+  color: var(--secondary-color);
+}
+#welcome {
+  display: flex;
+  padding: 0 0.5rem;
+  justify-content: space-between;
+}
+#menu {
+  width: 48px;
+  height: 48px;
+  background: var(--accent-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+h1 {
+  color: var(--tertiary-color);
+  display: grid;
+  place-items: center;
+}
+.search-bar {
+  padding: 1rem;
+  position: relative;
+}
+.inputBox {
+  width: 100%;
+  height: 100%;
+}
+.inputBox input {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 100px;
+  border: 0;
+  outline: 0;
+  font-size: 1rem;
+  color: var(--secondary-color);
+  font-family: "Inter", sans-serif;
+}
+.filter-menu {
+  padding: 0 1rem;
+}
+.filter-menu ul {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-y: auto;
+  gap: 1rem;
+}
+.filter-menu ul::-webkit-scrollbar {
+  display: none;
+}
+.filter-menu ul li {
+  list-style-type: none;
+  border-radius: 100px;
+  display: block;
+  overflow: hidden;
+  padding: 0;
+  flex-shrink: 0;
+}
+.filter-menu li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  height: 100%;
+  background: var(--tertiary-color);
+  color: black;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
