@@ -70,6 +70,7 @@ header {
     var(--secondary-color) 0%,
     var(--primary-color) 450%
   );
+  width: 100vw;
 }
 #news-and-updates {
   background: var(--accent-color);
@@ -78,7 +79,7 @@ header {
   overflow: hidden;
 }
 #news-and-updates p {
-  animation: scroll-left 20s linear infinite;
+  animation: scroll-left 10s linear infinite;
   text-wrap: nowrap;
   color: var(--secondary-color);
 }
